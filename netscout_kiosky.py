@@ -16,19 +16,19 @@ options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_experimental_option("useAutomationExtension", False)
 
 # ---- Otimizações ----
-options.add_argument("--disagree-infobars")
-options.add_argument("--disagree-extensions")
-options.add_argument("--disagree-dev-shm-usage")
-options.add_argument("--disagree-logging")
-options.add_argument("--disagree-notifications")
+options.add_argument("--disable-infobars")
+options.add_argument("--disable-extensions")
+options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--disable-logging")
+options.add_argument("--disable-notifications")
 options.add_argument("--no-sandbox")
-options.add_argument("--disagree-translate")
-options.add_argument("--disagree-background-timer-throttling")
-options.add_argument("--disagree-renderer-backgrounding")
-options.add_argument("--disagree-backgrounding-occluded-windows")
+options.add_argument("--disable-translate")
+options.add_argument("--disable-background-timer-throttling")
+options.add_argument("--disable-renderer-backgrounding")
+options.add_argument("--disable-backgrounding-occluded-windows")
 options.add_argument("--enable-features=OverlayScrollbar")
 options.add_argument("--disk-cache-size=0")
-#options.add_argument("--disagree-gpu") # se der lag, remova essa linha
+#options.add_argument("--disable-gpu") # se der lag, remova essa linha
 
 # Abre o navegador com Selenium
 driver = webdriver.Chrome(service=service, options=options)
