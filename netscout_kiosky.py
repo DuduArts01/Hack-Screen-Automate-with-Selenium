@@ -45,6 +45,3 @@ os.system("xdotool key F11")
 # Mantém aberto (sem fechar automaticamente)
 while True:
 	sleep(60)
-
-# Só para saber se o código chegou até o fim
-print("Finish!")
