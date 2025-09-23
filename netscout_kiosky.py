@@ -45,7 +45,16 @@ os.system("xdotool key F11")
 # Só para saber se o código chegou até o fim
 #print("Finish!")
 
-# Mantém aberto (sem fechar automaticamente)
-while True:
-	sleep(60)
+print("🔴 Rodando em fullscreen. Pressione ESC para sair.")
 
+# Loop principal com saída pelo ESC
+try:
+	# Mantém aberto (sem fechar automaticamente)
+    while True:
+        if keyboard.is_pressed("esc"):
+            print("🟢 Tecla ESC detectada, fechando...")
+            driver.quit()
+            break
+        sleep(1)
+except KeyboardInterrupt:
+    driver.quit()
