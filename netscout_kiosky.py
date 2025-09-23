@@ -42,8 +42,6 @@ sleep(10)
 # Força fullscreen com xdotool
 os.system("xdotool key F11")
 
-print("🔴 Rodando em fullscreen. Pressione ESC para sair.")
-
 # Mantém aberto (sem fechar automaticamente)
 while True:
 	sleep(60)
